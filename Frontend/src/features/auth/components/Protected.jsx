@@ -7,14 +7,18 @@ const Protected = ({children}) => {
 
 
     if(loading){
-        return (<main><h1>Loading...</h1></main>)
+        return (
+            <main className="w-full min-h-screen flex items-center justify-center bg-[#0d1117] text-[#e6edf3]">
+                <h1 className="text-2xl font-bold">Resuming Session...</h1>
+            </main>
+        )
     }
 
     if(!user){
-        return <Navigate to={'/login'} />
+        return <Navigate to={'/login'} replace />
     }
     
     return children
 }
 
-export default Protected
+export default Protected;

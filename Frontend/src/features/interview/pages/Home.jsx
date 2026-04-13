@@ -36,6 +36,8 @@ const Home = () => {
     );
   }
 
+  
+
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center px-6 py-12 gap-8 bg-[#0d1117] text-[#e6edf3] font-sans">
       {/* Page Header */}
